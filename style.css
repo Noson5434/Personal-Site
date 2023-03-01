@@ -1,0 +1,31 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.nav-text {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.const-col {
+  padding: 10%;
+}
+
+.footer-section {
+  background-color: #FF4C68;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.footer-links {
+  color: #FFFFFF;
+  height: 25px;
+  margin: 5px;
+  text-decoration: none;
+  width: 25px;
+}
+
+.footer-copyright {
+  margin-top: 7px;
+}
