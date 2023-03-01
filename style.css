@@ -1,31 +1,42 @@
 body {
   font-family: "Montserrat";
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-text {
-  font-family: "Montserrat";
-  font-weight: 700;
+#page-container {
+  padding-top: 10%;
+  position: relative;
+  min-height: 100vh;
 }
 
-.const-col {
-  padding: 10%;
+.main-text {
+  font-weight: 900;
 }
 
-.footer-section {
-  background-color: #FF4C68;
-  padding: 7% 15%;
-  text-align: center;
+#footer {
+  background-color: #EF8172;
+  bottom: 0;
+  height: 15rem;
+  padding-top: 6rem;
+  position: absolute;
+  width: 100%;
 }
 
 .footer-links {
   color: #FFFFFF;
   height: 25px;
   margin: 5px;
-  text-decoration: none;
-  width: 25px;
+  width: 30px;
 }
 
 .footer-copyright {
   margin-top: 7px;
+}
+
+@media (max-width: 1350px) {
+  #page-container {
+    padding-top: 30%;
+  }
 }
