@@ -60,7 +60,11 @@ body {
 }
 
 @media (max-width: 1350px) {
+  .center-text {
+    padding: 50px 0;
+  }
+
   #spinner {
-    top: 45%;
+    top: 39%;
   }
 }
