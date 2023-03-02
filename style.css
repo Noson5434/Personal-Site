@@ -5,41 +5,44 @@ body {
 
 .center-text {
   font-weight: 700;
-  justify-content: center;
   padding: 200px 0;
   position: relative;
   text-align: center;
 }
 
 #spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  height: 200px;
+  width: 200px;
+  text-indent: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #000000;
+  -webkit-mask-image: url(images/spinner.png);
+  mask-image: url(images/spinner.png);
   animation-name: spinnerRotate;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  background-color: #000;
-  height: 200px;
-  left: 50%;
-  -webkit-mask-image: url(images/spinner.png);
-  mask-image: url(images/spinner.png);
-  margin: -100px 0 0 -100px;
-  position: absolute;
-  width: 200px;
 }
 
 #footer {
-  background-color: #EF8172;
-  bottom: 0;
-  height: 15rem;
-  padding-top: 6rem;
   position: absolute;
   width: 100%;
+  height: 15rem;
+  bottom: 0;
+  padding-top: 6rem;
+  background-color: #EF8172;
 }
 
 .footer-links {
   color: #FFFFFF;
+  width: 30px;
   height: 25px;
   margin: 5px;
-  width: 30px;
 }
 
 .footer-copyright {
