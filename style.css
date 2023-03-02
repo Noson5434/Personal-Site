@@ -14,7 +14,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -100px 0 0 -100px;
+  margin: -100px;
   height: 200px;
   width: 200px;
   text-indent: 250px;
@@ -56,5 +56,11 @@ body {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1350px) {
+  #spinner {
+    top: 45%;
   }
 }
