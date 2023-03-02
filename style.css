@@ -1,18 +1,29 @@
 body {
   font-family: "Montserrat";
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
-#page-container {
-  padding-top: 10%;
+.center-text {
+  font-weight: 700;
+  justify-content: center;
+  padding: 200px 0;
   position: relative;
-  min-height: 100vh;
+  text-align: center;
 }
 
-.main-text {
-  font-weight: 900;
+#spinner {
+  animation-name: spinnerRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: #000;
+  height: 200px;
+  left: 50%;
+  -webkit-mask-image: url(images/spinner.png);
+  mask-image: url(images/spinner.png);
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  width: 200px;
 }
 
 #footer {
@@ -32,11 +43,15 @@ body {
 }
 
 .footer-copyright {
-  margin-top: 7px;
+  padding-top: 7px;
 }
 
-@media (max-width: 1350px) {
-  #page-container {
-    padding-top: 30%;
+@keyframes spinnerRotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
