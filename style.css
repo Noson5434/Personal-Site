@@ -1,5 +1,5 @@
 body {
-  font-family: "Ubuntu", "sans-serif";
+  font-family: "PT Sans", "sans-serif";
 }
 
 /* Header Text */
@@ -84,5 +84,3 @@ body {
   -moz-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
-
-/*# sourceMappingURL=style.css.map */
