@@ -4,14 +4,14 @@ body {
 
 /* Header Text */
 .heading-text {
-  font-weight: 900;
+  font-weight: 700;
   padding: 115px 0;
 }
 
 /* Pulsing Ripple Effect */
 .pinkBg {
-  background-color: #ED184F;
-  background-image: linear-gradient(90deg, #FD5581, #FD8B55);
+  background-color: #ed184f;
+  background-image: linear-gradient(90deg, #fd5581, #fd8b55);
 }
 
 .intro-banner {
@@ -84,3 +84,5 @@ body {
   -moz-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
+
+/*# sourceMappingURL=style.css.map */
