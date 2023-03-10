@@ -7,3 +7,8 @@ if (btn) {
     toast.show();
   });
 }
+
+$(function () {
+  $("#header").load("nav.html");
+  $("#footer").load("footer.html");
+});
