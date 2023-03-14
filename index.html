@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Verification -->
     <meta name="google-site-verification" content="Yji9F0VEdDy4gJ4nneF1EQnd-hr5Gvog4PYHmiDR0fo">
-    <title>Noson Rabinovich</title>
     <!-- Favicon -->
     <link rel="icon" href="images/tech-hoagie-website-favicon.png">
+    <title>Noson Rabinovich</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -20,27 +20,116 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <!-- MDB -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
-    <!-- Pull the Header -->
-    <div id="header"></div>
+    <header>
+
+      <!-- Intro settings -->
+      <style>
+        #intro {
+          /* Margin to fix overlapping fixed navbar */
+          margin-top: 58px;
+        }
+
+      </style>
+
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa-solid fa-bars"></span>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarButtons">
+            <!-- Left Elements -->
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <!-- Left Elements -->
+          </div>
+          <!-- Collapsible wrapper -->
+
+          <!-- Right Elements -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle d-flex align-items-center hidden-arrow" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/4.webp" alt="User Profile" class="rounded-circle" height="25" loading="lazy">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li>
+                <a href="#" class="dropdown-item">My Profile</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Settings</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Logout</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Right Elements -->
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Jumbotron -->
+      <div id="intro" class="p-5 text-center bg-light">
+        <h1 class="mb-3 h2">Learn Bootstrap 5 with MDB</h1>
+        <p class="mb-3">Best & free guide of responsive web design</p>
+        <a class="btn btn-primary m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button" rel="nofollow" target="_blank">Start tutorial</a>
+        <a class="btn btn-primary m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank" role="button">Download MDB UI KIT</a>
+      </div>
+      <!-- Jumbotron -->
+
+    </header>
 
     <!-- Main Layout -->
-    <main class="mt-5 pb-0">
-      <div class="container" data-current-page="1" aria-live="polite">
+    <main class="my-5">
+      <div class="container">
         <!-- Section: Content -->
         <section class="text-center">
-          <h4 class="mb-5 pt-5"><strong>Latest posts</strong></h4>
+          <h4 class="mb-5"><strong>Latest posts</strong></h4>
 
           <div class="row">
             <div class="col-lg-4 col-md-12 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-bs-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt="nature" class="img-fluid rounded">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt="nature" class="img-fluid">
+                  <a href="#">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Post title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Read Article</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-bs-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/023.jpg" alt="nature" class="img-fluid">
                   <a href="#">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
@@ -59,26 +148,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-bs-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/023.jpg" alt="nature" class="img-fluid rounded">
-                  <a href="#">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Read</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card">
-                <div class="bg-image hover-overlay ripple" data-bs-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.jpg" alt="nature" class="img-fluid rounded">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.jpg" alt="nature" class="img-fluid">
                   <a href="#">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
@@ -99,7 +169,7 @@
             <div class="col-lg-4 col-md-12 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-bs-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/002.jpg" alt="nature" class="img-fluid rounded">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/002.jpg" alt="nature" class="img-fluid">
                   <a href="#">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
@@ -118,7 +188,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-bs-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/022.jpg" alt="nature" class="img-fluid rounded">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/022.jpg" alt="nature" class="img-fluid">
                   <a href="#">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
@@ -137,7 +207,7 @@
             <div class="col-lg-4 col-md-6 mb-4 pb-3">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-bs-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/035.jpg" alt="nature" class="img-fluid rounded">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/035.jpg" alt="nature" class="img-fluid">
                   <a href="#">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
@@ -157,22 +227,22 @@
         <!-- Section: Content -->
 
         <!-- Pagination -->
-        <nav class="my-4 pb-3" aria-label="Page Navigation">
+        <nav class="my-4" aria-label="Page Navigation">
           <ul class="pagination pagination-circle justify-content-center">
-            <li class="page-item disabled">
-              <a href="#" aria-label="Previous" class="page-link">
-                <span aria-hidden="true">&lt;</span>
+            <li class="page-item">
+              <a href="#" class="page-link" tabindex="-1" aria-disabled="true">
+                <span>&laquo;</span>
               </a>
             </li>
             <li class="page-item active" aria-current="page">
-              <a href="index.html" class="page-link">1 <span class="sr-only">(current)</span></a>
+              <a href="#" class="page-link">1 <span class="sr-only">(current)</span></a>
             </li>
             <li class="page-item">
-              <a href="Page-2.html" class="page-link">2</a>
+              <a href="/index" class="page-link">2</a>
             </li>
             <li class="page-item">
-              <a href="Page-2.html" aria-label="Next" class="page-link">
-                <span aria-hidden="true">&gt;</span>
+              <a href="#" class="page-link" tabindex="-1" aria-disabled="true">
+                <span>&raquo;</span>
               </a>
             </li>
           </ul>
@@ -181,9 +251,33 @@
     </main>
     <!-- Main Layout -->
 
-    <!-- Pull the Footer -->
-    <div id="footer" class="pt-0"></div>
+    <!-- Footer Section -->
+    <footer class="bottom">
+      <hr class="m-0">
+      <!-- Links -->
+      <div class="text-center py-4 align-items-center">
+        <!-- Facebook -->
+        <a class="btn btn-link btn-lg text-dark m-1" href="https://www.facebook.com/Noson.Rabinowitz/" target="_blank" role="button" rel="nofollow" data-bs-ripple-color="dark"><span class="fa-brands fa-facebook"></span></a>
 
+        <!-- Twitter -->
+        <a class="btn btn-link btn-lg text-dark m-1" href="https://www.twitter.com/Noson5434/" target="_blank" role="button" rel="nofollow" data-bs-ripple-color="dark"><span class="fa-brands fa-twitter"></span></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-lg text-dark m-1" href="https://www.instagram.com/noson_rabinovich/" target="_blank" role="button" rel="nofollow" data-bs-ripple-color="dark"><span class="fa-brands fa-instagram"></span></a>
+
+        <!-- LinkedIn -->
+        <a class="btn btn-link btn-lg text-dark m-1" href="https://www.linkedin.com/in/noson-rabinovich/" target="_blank" role="button" rel="nofollow" data-bs-ripple-color="dark"><span class="fa-brands fa-linkedin"></span></a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #EF8172;">
+        &copy; 2023 Copyright: Noson Rabinovich
+      </div>
+    </footer>
+
+    <!-- MDB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js" async="true"></script>
+    <!-- JavaScript -->
     <script src="script.js" async="true"></script>
   </body>
 </html>

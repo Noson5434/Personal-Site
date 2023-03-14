@@ -8,7 +8,12 @@ if (btn) {
   });
 }
 
-$(function () {
-  $("#header").load("nav.html");
-  $("#footer").load("footer.html");
+$('.nav a:not(".external")').click(function (e) {
+  e.preventDefault();
+  $(this).tab("show");
 });
+
+// $(function () {
+//   $("#header").load("nav.html");
+//   $("#footer").load("footer.html");
+// });
